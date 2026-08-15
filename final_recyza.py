@@ -429,7 +429,7 @@ def clean_name(x):
 LOCAL_PRODUCT_IMAGES = {
 
     "clinic plus shampoo":
-        "1-strong-and-long-health-hair-shampoo-1-liter-clinic-plus-original-imagyz48yh6eegex.jpg",
+        "1-strong-and-long-health-hair-shampoo-1-liter-clinic-plus-original-imagyz48yh6eegex - Copy (2).jpg",
 
     "dove hairfall rescue":
         "7143zC6D9vL._AC_UF350,350_QL80_.jpg",
@@ -438,25 +438,25 @@ LOCAL_PRODUCT_IMAGES = {
         "slide_1_132ba508-ccbc-47e9-98b9-2ad780ae646f.jpg",
 
     "livon serum":
-        "50ml-livon-hair-serum-500x500.jpg",
+        "50ml-livon-hair-serum-500x500 - Copy (2).webp",
 
     "lizol floor cleaner":
-        "ew1zwha9dziukigmwtlm.avif",
+        "blobio-imr-202112_2983788024744ea8bc2d0c44ce13e5a9.jpg",
 
     "mamaearth rosemary water":
-        "610PBbsqFkL._AC_UF1000,1000_QL80_.jpg",
+        "WhatsApp Image 2026-08-11 at 11.48.33 AM.jpeg",
 
     "nivya body milk":
-        "400-nourishing-body-milk-for-very-dry-skin-with-almond-oil-enriched-0-original-imagjvg95w5khfwg.jpg",
+        "400-nourishing-body-milk-for-very-dry-skin-with-almond-oil-enriched-0-original-imagjvg95w5khfwg - Copy.jpg",
 
     "parachute coconut oil":
-        "parachute-100-pure-coconut-oil-300-ml-bottle-3-1654233076.webp",
+        "parachute-100-pure-coconut-oil-300-ml-bottle-3-1654233076.jpg",
 
     "whitetone face powder":
-        "OIP (8).jpeg",
+        "41K3pOsOeoL._AC_UF1000,1000_QL80_ - Copy (2).jpg",
 
     "wottagirl perfume":
-        "61j9yQJDYXL._SX679_.jpg"
+        "61j9yQJDYXL._SX679_ - Copy (2).jpg"
 }
 
 
