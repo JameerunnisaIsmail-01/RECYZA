@@ -129,17 +129,27 @@ with st.sidebar:
     st.markdown(f'<div class="coin">🪙 {st.session_state.coins} SuperCoins</div>',unsafe_allow_html=True)
 
 # User-supplied local product cover images.
+# Product images uploaded to GitHub inside the "product images" folder
 LOCAL_PRODUCT_IMAGES = {
-    "clinic plus shampoo": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\clinic plus shampoo\1-strong-and-long-health-hair-shampoo-1-liter-clinic-plus-original-imagyz48yh6eegex.jpg",
-    "dove hairfall rescue": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\Dove HairFall Rescue\7143zC6D9vL._AC_UF350,350_QL80_.jpg",
-    "denver perfume": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\Denver perfume\slide_1_132ba508-ccbc-47e9-98b9-2ad780ae646f.jpg",
-    "livon serum": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\Livon serum\50ml-livon-hair-serum-500x500.jpg",
-    "lizol floor cleaner": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\Lizol floor cleaner\ew1zwha9dziukigmwtlm.avif",
-    "mamaearth rosemary water": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\Mamaearth Rosemary Water\610PBbsqFkL._AC_UF1000,1000_QL80_.jpg",
-    "nivya body milk": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\nivya body mik\400-nourishing-body-milk-for-very-dry-skin-with-almond-oil-enriched-0-original-imagjvg95w5khfwg.jpg",
-    "parachute coconut oil": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\parachute hair oil\parachute-100-pure-coconut-oil-300-ml-bottle-3-1654233076.webp",
-    "whitetone face powder": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\whitetone face powder\OIP (8).jpeg",
-    "wottagirl perfume": r"C:\Users\jamee\OneDrive\Desktop\RECYZA\Dataset\wotta girl perfume\61j9yQJDYXL._SX679_.jpg",
+    "clinic plus shampoo": "product images/1-strong-and-long-health-hair-shampoo-1-liter-clinic-plus-original-imagyz48yh6eegex.jpg",
+
+    "dove hairfall rescue": "product images/7143zC6D9vL._AC_UF350,350_QL80_.jpg",
+
+    "denver perfume": "product images/slide_1_132ba508-ccbc-47e9-98b9-2ad780ae646f.jpg",
+
+    "livon serum": "product images/50ml-livon-hair-serum-500x500.jpg",
+
+    "lizol floor cleaner": "product images/ew1zwha9dziukigmwtlm.avif",
+
+    "mamaearth rosemary water": "product images/610PBbsqFkL._AC_UF1000,1000_QL80_.jpg",
+
+    "nivya body milk": "product images/400-nourishing-body-milk-for-very-dry-skin-with-almond-oil-enriched-0-original-imagjvg95w5khfwg.jpg",
+
+    "parachute coconut oil": "product images/parachute-100-pure-coconut-oil-300-ml-bottle-3-1654233076.webp",
+
+    "whitetone face powder": "product images/OIP (8).jpeg",
+
+    "wottagirl perfume": "product images/61j9yQJDYXL._SX679_.jpg",
 }
 
 def local_image_for_product(p):
@@ -163,10 +173,12 @@ def local_image_for_product(p):
     }
 
     key = aliases.get(ai_class) or aliases.get(name)
+
     if key:
-        path = Path(LOCAL_PRODUCT_IMAGES[key])
-        if path.exists():
-            return str(path)
+        return str(
+            Path(__file__).resolve().parent / LOCAL_PRODUCT_IMAGES[key]
+        )
+
     return None
 
 def product_card(p,key):
